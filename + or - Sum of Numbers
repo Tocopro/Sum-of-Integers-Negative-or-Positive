@@ -1,0 +1,38 @@
+#include <iostream>
+#include<string>
+using namespace std;
+
+int main()
+{
+    int number ;
+    int positiveNumber = 0;
+    int negativeNumber = 0;
+
+    int positiveCount = 0;
+    int negativeCount = 0;
+    int count = 0;
+    for(int i = 1; i <=4; i++)
+    {
+        cout << "Enter a Number positive or negative \n";
+        cin >> number;
+        if (number > 0)
+        {
+            positiveNumber = positiveNumber + number;
+            positiveCount ++;
+        }
+        else
+        {
+            negativeNumber = negativeNumber + number;
+            negativeCount++;
+        }
+        number= 0;
+    }
+    cout << "The Total of Positive Numbers " << positiveNumber << "\n";
+    cout << positiveCount << " - Number of Positive Integers \n";
+
+    cout << "The Total oif Negative Numbers " << negativeNumber << "\n";
+    cout << negativeCount << "- Number of Negative Integers \n";
+    return 0;
+}
+
+
